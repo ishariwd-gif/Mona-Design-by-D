@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Design by D | Exclusive Custom Dresses</title>
+    <meta name="description" content="Mona Design by D - Premium custom dress designing and fashion shop.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN as requested for no-node environment) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mona: {
+                            gold: '#D4AF37',
+                            black: '#1a1a1a',
+                            light: '#f8f5f2',
+                            accent: '#c5a028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1566174053879-31528523f8ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-mona-light text-mona-black antialiased font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="font-serif text-2xl md:text-3xl font-bold tracking-wide hover:text-mona-gold transition-colors">
+                Mona <span class="text-mona-gold">Design</span> <span
+                    class="text-sm font-sans font-normal tracking-widest uppercase ml-1">by D</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center uppercase text-sm tracking-widest font-semibold">
+                <a href="index.html" class="text-mona-gold">Home</a>
+                <a href="shop.html" class="hover:text-mona-gold transition-colors">Collections</a>
+                <a href="customize.html" class="hover:text-mona-gold transition-colors">Customize</a>
+                <a href="about.html" class="hover:text-mona-gold transition-colors">About</a>
+                <a href="contact.html"
+                    class="px-5 py-2 border border-mona-black hover:bg-mona-black hover:text-white transition-all">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <div class="space-y-2">
+                    <span class="block w-8 h-0.5 bg-mona-black transition-all origin-center"></span>
+                    <span class="block w-8 h-0.5 bg-mona-black transition-all origin-center"></span>
+                    <span class="block w-6 h-0.5 bg-mona-black transition-all origin-center ml-auto"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 text-xl font-serif md:hidden">
+            <a href="index.html" class="text-mona-gold">Home</a>
+            <a href="shop.html" class="hover:text-mona-gold">Collections</a>
+            <a href="customize.html" class="hover:text-mona-gold">Customize</a>
+            <a href="about.html" class="hover:text-mona-gold">About</a>
+            <a href="contact.html" class="hover:text-mona-gold">Contact</a>
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-2xl">&times;</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen hero-bg flex items-center justify-center text-center text-white">
+        <div class="px-6 max-w-4xl fade-in-up">
+            <p class="text-sm md:text-base tracking-[0.3em] uppercase mb-4 text-mona-gold">Exclusive Fashion & Tailoring
+            </p>
+            <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+                Define Your <br> <span class="italic text-mona-gold">Elegance</span>
+            </h1>
+            <p class="text-lg md:text-xl md:w-2/3 mx-auto mb-10 font-light opacity-90">
+                Crafting bespoke dresses that embody your unique style and grace. Designed by D.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="shop.html"
+                    class="px-8 py-4 bg-mona-gold text-white font-bold tracking-widest uppercase hover:bg-white hover:text-mona-black transition-all duration-300">
+                    View Collection
+                </a>
+                <a href="customize.html"
+                    class="px-8 py-4 border border-white text-white font-bold tracking-widest uppercase hover:bg-white hover:text-mona-black transition-all duration-300">
+                    Design Your Own
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Services Highlight -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 text-center animate-on-scroll">
+            <div class="group p-8 hover:shadow-xl transition-shadow duration-300 rounded-sm">
+                <div
+                    class="w-16 h-16 mx-auto mb-6 bg-mona-light rounded-full flex items-center justify-center text-mona-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-2xl mb-3 group-hover:text-mona-gold transition-colors">Custom Tailoring</h3>
+                <p class="text-gray-600 leading-relaxed">Perfectly fitted dresses made to your exact measurements and
+                    style preferences.</p>
+            </div>
+            <div class="group p-8 hover:shadow-xl transition-shadow duration-300 rounded-sm">
+                <div
+                    class="w-16 h-16 mx-auto mb-6 bg-mona-light rounded-full flex items-center justify-center text-mona-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-2xl mb-3 group-hover:text-mona-gold transition-colors">Exclusive Designs</h3>
+                <p class="text-gray-600 leading-relaxed">Unique, one-of-a-kind pieces designed by D, ensuring you stand
+                    out in any crowd.</p>
+            </div>
+            <div class="group p-8 hover:shadow-xl transition-shadow duration-300 rounded-sm">
+                <div
+                    class="w-16 h-16 mx-auto mb-6 bg-mona-light rounded-full flex items-center justify-center text-mona-gold">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-2xl mb-3 group-hover:text-mona-gold transition-colors">Timely Delivery</h3>
+                <p class="text-gray-600 leading-relaxed">We respect your time. Get your dream outfit delivered right
+                    when you need it.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Collection -->
+    <section class="py-20 bg-mona-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 animate-on-scroll">
+                <span class="uppercase tracking-widest text-mona-gold text-sm font-bold">New Arrivals</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-mona-black mt-2">Latest Collections</h2>
+                <div class="w-24 h-1 bg-mona-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 animate-on-scroll">
+                <!-- Item 1 -->
+                <div class="group bg-white shadow-sm hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-96">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Evening Gown"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full py-3 bg-white text-black font-bold uppercase tracking-widest hover:bg-mona-gold hover:text-white transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-serif text-xl font-bold mb-2">Royal Evening Gown</h3>
+                        <p class="text-mona-gold font-bold">$120.00</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="group bg-white shadow-sm hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-96">
+                        <img src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Summer Maxi"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full py-3 bg-white text-black font-bold uppercase tracking-widest hover:bg-mona-gold hover:text-white transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-serif text-xl font-bold mb-2">Floral Silk Midi</h3>
+                        <p class="text-mona-gold font-bold">$85.00</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="group bg-white shadow-sm hover:shadow-2xl transition-all duration-300">
+                    <div class="relative overflow-hidden h-96">
+                        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            alt="Cocktail Dress"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div
+                            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-6 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <button
+                                class="w-full py-3 bg-white text-black font-bold uppercase tracking-widest hover:bg-mona-gold hover:text-white transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-serif text-xl font-bold mb-2">Velvet Cocktail Dress</h3>
+                        <p class="text-mona-gold font-bold">$150.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="shop.html"
+                    class="inline-block border-b-2 border-mona-black pb-1 uppercase tracking-widest hover:text-mona-gold hover:border-mona-gold transition-colors">View
+                    All Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Section -->
+    <section class="py-20 relative bg-fixed bg-center bg-cover"
+        style="background-image: url('https://images.unsplash.com/photo-1620658421067-160b73c4d7ec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div
+            class="container mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center animate-on-scroll">
+            <div class="text-white">
+                <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">Create Your Dream Dress</h2>
+                <p class="text-lg opacity-90 mb-8 leading-relaxed">
+                    Have a design in mind? Whether it's for a wedding, a gala, or a casual outing, we bring your vision
+                    to life with precision and passion. Book a consultation for a custom fitting today.
+                </p>
+                <a href="customize.html"
+                    class="px-8 py-4 bg-white text-black font-bold tracking-widest uppercase hover:bg-mona-gold hover:text-white transition-all duration-300">
+                    Start Customizing
+                </a>
+            </div>
+            <div class="hidden md:block">
+                <!-- Decorative space or image -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center animate-on-scroll">
+            <span class="text-6xl text-mona-gold font-serif opacity-30">"</span>
+            <p class="font-serif text-2xl md:text-3xl italic text-gray-800 mb-8 md:w-2/3 mx-auto">
+                Absolutely stunning! The dress fit perfectly and the attention to detail was incredible. Mona Design by
+                D is now my go-to for all events.
+            </p>
+            <div class="flex items-center justify-center space-x-4">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+                    alt="Customer" class="w-12 h-12 rounded-full object-cover">
+                <div class="text-left">
+                    <p class="font-bold text-sm uppercase">Amara Perera</p>
+                    <p class="text-xs text-mona-gold">Loyal Customer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-mona-black text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 border-b border-gray-800 pb-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="font-serif text-2xl font-bold mb-6 block">
+                        Mona <span class="text-mona-gold">Design</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Elevating fashion with custom-made elegance. Designed by D for the modern, sophisticated woman.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-6 text-sm">Shop</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Dresses</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Accessories</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-6 text-sm">Help</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-mona-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-6 text-sm">Stay Updated</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for latest trends and offers.</p>
+                    <form class="flex border-b border-gray-600 pb-2">
+                        <input type="email" placeholder="Your Email"
+                            class="bg-transparent w-full text-white placeholder-gray-500 focus:outline-none">
+                        <button type="submit"
+                            class="text-mona-gold font-bold uppercase text-xs hover:text-white">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
+                <p>&copy; 2024 Mona Design by D. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Instagram</a>
+                    <a href="#" class="hover:text-white">Facebook</a>
+                    <a href="#" class="hover:text-white">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

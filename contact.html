@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mona Design by D | Contact Us</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mona: {
+                            gold: '#D4AF37',
+                            black: '#1a1a1a',
+                            light: '#f8f5f2',
+                            accent: '#c5a028'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-mona-light text-mona-black antialiased font-sans">
+
+    <!-- Navbar (Same as Index) -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html"
+                class="font-serif text-2xl md:text-3xl font-bold tracking-wide hover:text-mona-gold transition-colors">
+                Mona <span class="text-mona-gold">Design</span> <span
+                    class="text-sm font-sans font-normal tracking-widest uppercase ml-1">by D</span>
+            </a>
+
+            <div class="hidden md:flex space-x-8 items-center uppercase text-sm tracking-widest font-semibold">
+                <a href="index.html" class="hover:text-mona-gold transition-colors">Home</a>
+                <a href="shop.html" class="hover:text-mona-gold transition-colors">Collections</a>
+                <a href="customize.html" class="hover:text-mona-gold transition-colors">Customize</a>
+                <a href="about.html" class="hover:text-mona-gold transition-colors">About</a>
+                <a href="contact.html"
+                    class="px-5 py-2 border border-mona-black bg-mona-black text-white hover:bg-mona-gold hover:border-mona-gold transition-all">Contact</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <div class="space-y-2">
+                    <span class="block w-8 h-0.5 bg-mona-black transition-all origin-center"></span>
+                    <span class="block w-8 h-0.5 bg-mona-black transition-all origin-center"></span>
+                    <span class="block w-6 h-0.5 bg-mona-black transition-all origin-center ml-auto"></span>
+                </div>
+            </button>
+        </div>
+
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center space-y-8 text-xl font-serif md:hidden">
+            <a href="index.html" class="hover:text-mona-gold">Home</a>
+            <a href="shop.html" class="hover:text-mona-gold">Collections</a>
+            <a href="customize.html" class="hover:text-mona-gold">Customize</a>
+            <a href="about.html" class="hover:text-mona-gold">About</a>
+            <a href="contact.html" class="text-mona-gold">Contact</a>
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-2xl">&times;</button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative py-32 bg-mona-black text-white text-center">
+        <div class="absolute inset-0 overflow-hidden opacity-30">
+            <img src="https://images.unsplash.com/photo-1596524430615-b46476dd9fdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                alt="Contact" class="w-full h-full object-cover">
+        </div>
+        <div class="relative z-10 animate-on-scroll">
+            <h1 class="font-serif text-5xl md:text-6xl font-bold mb-4">Get In Touch</h1>
+            <p class="text-lg font-light tracking-wide max-w-2xl mx-auto">We'd love to hear from you. Visit our studio
+                or drop a message.</p>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="container mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+            <!-- Contact Info -->
+            <div class="space-y-12 animate-on-scroll">
+                <div>
+                    <h3 class="font-serif text-3xl font-bold mb-6">Studio Location</h3>
+                    <p class="text-gray-600 mb-2 font-bold">Mona Design by D</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        123 Fashion Avenue,<br>
+                        Colombo 07,<br>
+                        Sri Lanka.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-3xl font-bold mb-6">Opening Hours</h3>
+                    <div class="grid grid-cols-2 gap-4 text-sm text-gray-600 max-w-xs">
+                        <div class="font-bold">Mon - Fri:</div>
+                        <div>10:00 AM - 7:00 PM</div>
+                        <div class="font-bold">Saturday:</div>
+                        <div>10:00 AM - 5:00 PM</div>
+                        <div class="font-bold">Sunday:</div>
+                        <div>Closed</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-serif text-3xl font-bold mb-6">Contact Details</h3>
+                    <p class="text-gray-600 mb-2">
+                        <span class="font-bold block text-xs tracking-widest uppercase mb-1">Phone</span>
+                        <a href="tel:+94771234567" class="hover:text-mona-gold transition-colors">+94 77 123 4567</a>
+                    </p>
+                    <p class="text-gray-600">
+                        <span class="font-bold block text-xs tracking-widest uppercase mb-1 mt-4">Email</span>
+                        <a href="mailto:contact@monadesign.com"
+                            class="hover:text-mona-gold transition-colors">contact@monadesign.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Map & Form -->
+            <div class="animate-on-scroll delay-100">
+                <!-- Simple Map Placeholder (since iframe might break or need key) -->
+                <div
+                    class="w-full h-64 bg-gray-200 mb-8 flex items-center justify-center text-gray-500 font-bold uppercase tracking-widest">
+                    Google Maps Placeholder
+                </div>
+
+                <form class="space-y-6">
+                    <h3 class="font-serif text-2xl font-bold mb-4">Send us a Message</h3>
+                    <div>
+                        <input type="text" placeholder="Your Name"
+                            class="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-mona-gold focus:ring-1 focus:ring-mona-gold transition-all">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email"
+                            class="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-mona-gold focus:ring-1 focus:ring-mona-gold transition-all">
+                    </div>
+                    <div>
+                        <textarea rows="4" placeholder="Your Message"
+                            class="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-mona-gold focus:ring-1 focus:ring-mona-gold transition-all resize-none"></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-mona-black text-white px-8 py-4 font-bold uppercase tracking-widest hover:bg-mona-gold transition-colors">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer (Same as Index) -->
+    <footer class="bg-mona-black text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12 border-b border-gray-800 pb-12">
+                <div class="md:col-span-1">
+                    <a href="index.html" class="font-serif text-2xl font-bold mb-6 block">
+                        Mona <span class="text-mona-gold">Design</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Elevating fashion with custom-made elegance. Designed by D for the modern, sophisticated woman.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-6 text-sm">Shop</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Dresses</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Accessories</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-6 text-sm">Help</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-mona-gold transition-colors">FAQ</a></li>
+                        <li><a href="contact.html" class="hover:text-mona-gold transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold uppercase tracking-widest mb-6 text-sm">Stay Updated</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for latest trends and offers.</p>
+                    <form class="flex border-b border-gray-600 pb-2">
+                        <input type="email" placeholder="Your Email"
+                            class="bg-transparent w-full text-white placeholder-gray-500 focus:outline-none">
+                        <button type="submit"
+                            class="text-mona-gold font-bold uppercase text-xs hover:text-white">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
+                <p>&copy; 2024 Mona Design by D. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Instagram</a>
+                    <a href="#" class="hover:text-white">Facebook</a>
+                    <a href="#" class="hover:text-white">TikTok</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
